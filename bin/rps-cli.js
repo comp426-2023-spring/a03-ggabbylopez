@@ -8,7 +8,7 @@ const args = minimist(process.argv.slice(2), {
     }
 });
 
-import { RPS,helpRPS,rulesRPS } from "../lib/rpsls";
+import { RPS,helpRPS,rulesRPS } from "../lib/rpsls.js";
 
 
 if (args.h || args.help){
