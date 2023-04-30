@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import minimist from "minimist";
-import { playRPS,helpRPS,rulesRPS } from "../lib/rpsls";
+import { RPS,helpRPS,rulesRPS } from "../lib/rpsls";
 
 const args = minimist(process.argv.slice(2), {
     alias: {
@@ -26,7 +26,7 @@ if (args.h || args.help){
 
     playerMove = playerMove.toLowerCase();
 
-    var result = playRPS(playerMove);
+    var result = RPS(playerMove);
 
     if(!(typeof result == "undefined")){
         console.log(JSON.stringify(result));
