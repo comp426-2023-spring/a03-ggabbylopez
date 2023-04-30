@@ -11,8 +11,9 @@ const args = minimist(process.argv.slice(2), {
 
 if (args.h || args.help){
     helpRPS();
-    process.exit()
-} else if (args.r || args.rules){
+    process.exit(0)
+} 
+if (args.r || args.rules){
     rulesRPS();
     process.exit();
 } else {

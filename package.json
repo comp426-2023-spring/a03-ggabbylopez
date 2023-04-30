@@ -1,9 +1,9 @@
 {
   "name": "node-rpsls",
   "version": "1.0.0",
-  "description": "Create an installable node.js module package w/ rps",
-  "type": "module",
+  "description": "Create an installable node.js module package w/ rps and rpsls",
   "main": "./lib/rpsls.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,15 +11,6 @@
     "type": "git",
     "url": "git+https://github.com/comp426-2023-spring/a03-ggabbylopez.git"
   },
-  "keywords": [
-    "web",
-    "server",
-    "port",
-    "node",
-    "fs",
-    "args",
-    "http"
-  ],
   "author": "@ggabbylopez",
   "license": "MIT",
   "bugs": {
