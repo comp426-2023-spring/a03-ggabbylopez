@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 
 import minimist from "minimist";
-import { RPS,helpRPS,rulesRPS } from "../lib/rpsls";
 
 const args = minimist(process.argv.slice(2), {
     alias: {
         r: "rules"
     }
 });
+
+import { RPS,helpRPS,rulesRPS } from "../lib/rpsls";
+
 
 if (args.h || args.help){
     helpRPS();
